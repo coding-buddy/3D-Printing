@@ -7,7 +7,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetSectionId = this.getAttribute('href');
             const targetSection = document.querySelector(targetSectionId);
             
-            if (targetSection) {
+            if (targetSectionId === "#services") {
+                const targetHeight = targetSection.offsetTop; // Adjust the height as needed
+                window.scrollTo({
+                    top: targetHeight,
+                    behavior: 'smooth'
+                });
+            }
+            else{
                 const targetHeight = targetSection.offsetTop - 100; // Adjust the height as needed
                 window.scrollTo({
                     top: targetHeight,
