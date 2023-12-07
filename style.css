@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    transition: background-color 1s ease;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  header a:hover {
+    color: #cccccc;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 70px;
+  }
+  
+  header nav li {
+    margin-left: 10px;
+    margin-right: 20px;
+    list-style: none;
+  }
+
+
+  /* Hero Section Container */
+.hero {
+    position: relative;
+    top: 100px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* hides overflowing content */
+  }
+  
+  /* Background Image or Video */
+  .hero__bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg.jpeg); /* replace with your background image */
+    background-size: cover; /* fills the container */
+    background-position: center; /* centers the image */
+    filter: blur(5px);
+  }
+  
+  /* Overlay (optional) */
+  .hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* adjust opacity for desired effect */
+  }
+  
+  /* Content Container */
+  .hero__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 26vh auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .hero__heading {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 20px;
+  }
+  
+  /* Subheading (optional) */
+  .hero__subheading {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 50px 30px 50px;
+  }
+  
+  /* Call to Action Button */
+  .hero__cta, .cta{
+    background-color: #ff0000; /* adjust color to match brand */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  
+  .value-proposition {
+    background-color: #fff;
+    padding: 184px 0 150px 165px;
+  }
+  
+  .value-proposition h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  
+  .value-proposition ul {
+    list-style: none;
+    padding: 20px 0 0 60px;
+    margin: 0;
+  }
+  
+  .value-proposition li {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .value-proposition-icon {
+    width: 30px;
+    color: greenyellow;
+  }
+  
+  .value-proposition-content {
+    font-family: Arial, sans-serif;
+  }
+  
+  .value-proposition img{
+    float: right;
+    position: relative;
+    bottom: 80px;
+    right: 150px;
+    width: 400px;
+    box-shadow: 4px 4px 5px gainsboro;
+  }
+
+
+  .portfolio h2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .portfolio .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .portfolio img{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  .call-to-action{
+    background-color: #ececec;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .call-to-action a:first-child{
+    margin: 0 500px;
+    font-size: 1.4em;
+  }
+
+
+
+  .social-media-handles{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
